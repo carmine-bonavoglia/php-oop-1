@@ -48,4 +48,4 @@ $movie -> genere = 'Azione';
 $movie -> audio = ['ITA', 'ENG'];
 $movie -> setVisione('azione');
 $movie -> descrizione = 'John Wick, l\'Uomo Nero, interpretato da Keanu Reeves è un ex killer che ha voltato pagina e cominciato una nuova vita con sua moglie Helen. Ma pochi anni dopo Helen muore a causa di una malattia, lasciandogli un cucciolo di cane, a cui John si affeziona in ricordo della moglie. Quando una notte dei balordi si introducono in casa di John, uccidono la cagnolina e rubano la sua adorata auto, l\'Uomo Nero è costretto a tornare sui suoi passi e affrontare i fantasmi del passato.';
-$movie -> poster = '../img/poster.jpg';
+$movie -> poster = 'img/poster.jpg';

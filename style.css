@@ -1,0 +1,122 @@
+/* Regole generali */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+}
+
+/* /Regole generali */
+
+/* Header */
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 3%;
+    background-color: #161c1f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-dx{
+    display: flex;
+}
+
+.navbar-dx img{
+    height: 50px;
+    margin: 15px;
+}
+
+.navbar-dx ul,
+.navbar-sx ul{
+    list-style: none;
+    font-weight: 600;
+}
+
+.navbar-dx ul li,
+.navbar-sx ul li{
+    display: inline-block;
+    text-decoration: none;
+    color: #a9abac;
+}
+
+.navbar-dx ul li a,
+.navbar-sx ul li a{
+    text-decoration: none;
+    color: #a9abac;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+.navbar-dx ul li a:hover,
+.navbar-sx ul li a:hover{
+    color: white;
+}
+
+.fas{
+    margin-left: 5px;
+}
+
+.fas:hover{
+    color: white;
+}
+
+.navbar-sx .rounded{
+    display: inline;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+/* /Header */
+
+
+/* Corpo Principale */
+main{
+    background-color: #0a1014;
+    width: 100%;
+    height: 100vh;
+}
+/* /Corpo Principale */
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 60px;
+    padding: 0 2%;
+    background-color: #12161a;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    height: 36px;
+    margin: 12px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    color: #a9abac;
+    line-height: 60px;
+}
+
+footer ul li>i{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+footer ul li>i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* /Footer */
