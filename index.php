@@ -48,10 +48,85 @@ include 'database.php';
     <main>
         <div class="container">
             <div class="box-poster">
-
+                <img src="<?php echo $movie->poster ?>" alt="Locandina John Wick">
             </div>
             <div class="box-descrizione">
+                <h1><?php echo $movie->titolo; ?></h1>
 
+                <!-- Genere, Durata, Anno -->
+                <span><?php echo $movie->genere; ?></span>
+
+                <span> | </span>
+
+                <span><?php echo $movie->durata; ?> min</span>
+
+                <span> | </span>
+
+                <span>
+                    <?php
+                    $i = 0;
+                    $audio = $movie->audio;
+                    $c = count($audio);
+                    foreach ($audio as $key => $val) {
+                        if ($i++ < $c - 1) {
+                            echo $val .= ', ';
+                        } else {
+                            echo $val;
+                        }
+                    }
+                    ?>
+                </span>
+                <!-- Genere, Durata, Anno -->
+
+                <div class="btn-section">
+                    <button><i class="fas fa-play"></i> Trailer</button>
+                    <button><i class="fas fa-plus"></i> La tua lista</button>
+                    <button><i class="fas fa-share"></i> Condividi</button>
+                    <button class='dot'><i class="fas fa-thumbs-up"></i></button>
+                    <button class='dot'><i class="fas fa-thumbs-down"></i></button>
+                </div>
+
+                <!-- Regia e Cast -->
+                <span>
+                    Regia:
+                    <?php
+                    $i = 0;
+                    $regia = $movie->regia;
+                    $c = count($regia);
+                    foreach ($regia as $key => $val) {
+                        if ($i++ < $c - 1) {
+                            echo $val .= ', ';
+                        } else {
+                            echo $val;
+                        }
+                    }
+                    ?>
+                </span>
+
+                <span> | </span>
+
+                <span>
+                    Cast:
+                    <?php
+                    $i = 0;
+                    $cast = $movie->cast;
+                    $c = count($cast);
+                    foreach ($cast as $key => $val) {
+                        if ($i++ < $c - 1) {
+                            echo $val .= ', ';
+                        } else {
+                            echo $val;
+                        }
+                    }
+                    ?>
+                </span>
+                <!-- Regia e Cast -->
+
+                <!-- Descrizione -->
+                <p>
+                    <?php echo $movie->paeseProduzione; ?>, <?php echo $movie->annoProduzione; ?>. <?php echo $movie->descrizione; ?>
+                </p>
+                <!-- Descrizione -->
             </div>
             <div class="box-lingua">
 
